@@ -152,7 +152,7 @@ export default function Contacto() {
                 </h3>
 
                 <Form action="/contacto" method="POST" className="mt-14">
-                  <div className="gap-x-5 gap-y-4 px-8">
+                  <div className="gap-x-5 gap-y-4 px-8 md:p-8 pl-0 pr-0">
                     <div>
                       <label
                         htmlFor="nombre"

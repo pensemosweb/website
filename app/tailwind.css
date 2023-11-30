@@ -39,3 +39,31 @@ label {
     clip-path: polygon(56% 0, 100% 0, 100% 100%, 40% 100%);
   }
 }
+
+@screen md {
+  .h1 {
+    @apply text-6xl;
+  }
+
+  .h2 {
+    @apply text-5xl;
+  }
+
+  .h3 {
+    @apply text-4xl;
+  }
+}
+
+/* Buttons */
+.btn,
+.btn-sm {
+  @apply text-sm font-medium inline-flex items-center justify-center border border-transparent rounded-full transition duration-150 ease-in-out;
+}
+
+.btn {
+  @apply px-4 py-1.5;
+}
+
+.btn-sm {
+  @apply px-3 py-1;
+}
