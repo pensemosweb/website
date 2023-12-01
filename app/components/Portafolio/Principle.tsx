@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Particles from "~/components/Particles/Particles";
 
+import Illustration from "~/assets/svgs/glow-top.svg";
 import { items } from "~/data/principles";
 
 export default function Principle() {
@@ -66,6 +67,14 @@ export default function Principle() {
 
   return (
     <section data-testid="servicios" className="relative py-20">
+      <div className="absolute left-1/2 -translate-x-1/2 top-0">
+        <img
+          src={Illustration}
+          className="max-w-none"
+          width={2146}
+          alt="Hero Illustration"
+        />
+      </div>
       <div className="px-4 mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h1

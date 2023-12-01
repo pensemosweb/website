@@ -32,7 +32,7 @@ export default function Hero() {
                   href="#0"
                 >
                   <span className="relative inline-flex items-center z-20">
-                    API Studio is now in beta{" "}
+                    Proyectos{" "}
                     <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                       -&gt;
                     </span>
@@ -41,7 +41,7 @@ export default function Hero() {
               </div>
             </div>
             <h1 className="h1 text-white pb-4" data-aos="fade-down">
-              The API Security Framework
+              Proyectos
             </h1>
             <p
               className="text-lg text-slate-300 mb-8"

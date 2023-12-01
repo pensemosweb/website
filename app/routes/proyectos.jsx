@@ -1,7 +1,20 @@
-import Particles from "../components/Particles/Particles"
+import Particles from "../components/Particles/Particles";
 import Principle from "../components/Portafolio/Principle";
-import Illustration from "~/assets/svgs/glow-bottom.svg";
-import Features from "../components/Portafolio/Features"
+import Hero from "../components/Portafolio/Hero";
+import Lenguajes from "../components/Portafolio/Lenguajes";
+import Projects from "../components/Portafolio/Projects";
+import Metodos from "../components/Portafolio/Metodos";
+
+export function Links() {
+  return [
+    {
+      rel: "style",
+      href: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+    },
+    { src: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" },
+  ];
+}
+
 export default function Proyectos() {
   return (
     <section className="bg-slate-900">
@@ -12,19 +25,14 @@ export default function Proyectos() {
         <div
           className="-z-0 absolute inset-0 -mx-28 rounded-b-[3rem] pointer-events-none overflow-hidden"
           aria-hidden="true"
-        >
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-0">
-            <img
-              src={Illustration}
-              className="max-w-none"
-              width={2146}
-              alt="Hero Illustration"
-            />
-          </div>
-        </div>
+        ></div>
+
+        <Hero />
+        <Lenguajes />
         <Principle />
 
-        <Features/>
+        <Metodos />
+        <Projects />
       </div>
     </section>
   );

@@ -1,13 +1,12 @@
 "use client";
-import { Link } from "react-router-dom";
+import Particles from "~/components/Particles/Particles";
 import { useState } from "react";
 import Metodo from "~/assets/imgs/portafolio/Metodo-agil.svg";
-import { Route } from "@playwright/test";
-
 import { Transition } from "@headlessui/react";
-
-export default function Features() {
+import agilidad from "~/assets/imgs/portafolio/Metodo-agil.jpeg";
+export default function Metodos() {
   const [tab, setTab] = useState<number>(1);
+
 
   return (
     <section>
@@ -31,6 +30,7 @@ export default function Features() {
         <div className="pt-16 pb-12 md:pt-52 md:pb-20">
           <div>
             {/* Section content */}
+
             <div className="max-w-xl mx-auto md:max-w-none flex flex-col md:flex-row md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-8 space-y-reverse md:space-y-0">
               {/* Content */}
               <div
@@ -46,48 +46,83 @@ export default function Features() {
                       animationFillMode: "both",
                     }}
                   >
-                    <span>Metodo </span>
-                    <span className="font-serif italic relative">agil</span>
+                    <span>Método </span>
+                    <span className="font-serif italic relative">ágil</span>
                   </h1>
                 </div>
-                <div id="Colabora">
-                  <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
-                    💡Colabora y aprende.
-                  </h3>
-                  <p className="text-lg text-slate-400 mb-8">
-                    Trabajamos codo a codo contigo para comprender tus objetivos
-                    y necesidades.
-                  </p>
-                </div>
-                <div>
-                  {/* 👇️ react router link */}
-                  <Link to="/about">
-                    <button>Click</button>
-                  </Link>
-                </div>
-                <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
-                  🚀Crea ASAP
-                </h3>
-                <p className="text-lg text-slate-400 mb-8">
-                  Entregamos resultados en iteraciones rápidas y manejables.
-                  Permitiéndote ver el progreso de manera constante
-                </p>
+                {tab === 1 && (
+                  <div
+                    className="motion-safe:animate-fadeInDown"
+                    style={{
+                      animationDelay: "1s",
+                      animationFillMode: "both",
+                    }}
+                  >
+                    <h3 className=" h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
+                      💡Colabora y aprende.
+                    </h3>
+                    <p className="text-lg text-slate-400 mb-8">
+                      Trabajamos codo a codo contigo para comprender tus
+                      objetivos y necesidades.
+                    </p>
+                  </div>
+                )}
 
-                <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
-                  🔄Retroalimenta.
-                </h3>
-                <p className="text-lg text-slate-400 mb-8">
-                  Ponemos a prueba lo que hemos construido y recopilamos tus
-                  comentarios permitiendonos identificar áreas de mejora y
-                  ajustar nuestro camino
-                </p>
-                <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
-                  🌟Adapta/mejora.
-                </h3>
-                <p className="text-lg text-slate-400 mb-8">
-                  Adaptamos nuestro enfoque y mejoramos continuamente nuestros
-                  procesos
-                </p>
+                {tab === 2 && (
+                  <div
+                    className="motion-safe:animate-fadeInDown"
+                    style={{
+                      animationDelay: ".5s",
+                      animationFillMode: "both",
+                    }}
+                  >
+                    <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
+                      🚀Crea ASAP
+                    </h3>
+                    <p className="text-lg text-slate-400 mb-8">
+                      Entregamos resultados en iteraciones rápidas y manejables.
+                      Permitiéndote ver el progreso de manera constante.
+                    </p>
+                  </div>
+                )}
+
+                {tab === 3 && (
+                  <div
+                    className="motion-safe:animate-fadeInDown"
+                    style={{
+                      animationDelay: ".5s",
+                      animationFillMode: "both",
+                    }}
+                  >
+                    <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
+                      🔄Retroalimenta.
+                    </h3>
+                    <p className="text-lg text-slate-400 mb-8">
+                      Ponemos a prueba lo que hemos construido y recopilamos tus
+                      comentarios permitiéndonos identificar áreas de mejora y
+                      ajustar nuestro camino.
+                    </p>
+                  </div>
+                )}
+
+                {tab === 4 && (
+                  <div
+                    className="motion-safe:animate-fadeInDown"
+                    style={{
+                      animationDelay: ".5s",
+                      animationFillMode: "both",
+                    }}
+                  >
+                    <h3 className="h3 bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
+                      🌟Adapta/mejora.
+                    </h3>
+                    <p className="text-lg text-slate-400 mb-8">
+                      Adaptamos nuestro enfoque y mejoramos continuamente
+                      nuestros procesos.
+                    </p>
+                  </div>
+                )}
+
                 <div className="mt-8 max-w-xs max-md:mx-auto space-y-2">
                   <button
                     className={`flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100 ${
@@ -107,6 +142,7 @@ export default function Features() {
                     </svg>
                     <span>💡Colabora y aprende.</span>
                   </button>
+                  <div></div>
                   <button
                     className={`flex items-center text-sm font-medium text-slate-50 rounded border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100 ${
                       tab !== 2
@@ -138,6 +174,7 @@ export default function Features() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
+                      filter="url(#hi-a)"
                     >
                       <path d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z" />
                     </svg>
@@ -172,10 +209,16 @@ export default function Features() {
               >
                 <div className="relative py-24 -mt-12">
                   {/* Particles animation */}
+                  <Particles
+                    className="absolute inset-0 -z-10"
+                    quantity={8}
+                    staticity={30}
+                  />
 
                   <div className="flex items-center justify-center">
                     <div className="relative w-48 h-48 flex justify-center items-center">
                       {/* Halo effect */}
+
                       <svg
                         className="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 will-change-transform pointer-events-none blur-md"
                         width="480"
@@ -217,6 +260,7 @@ export default function Features() {
                           />
                         </g>
                       </svg>
+
                       {/* Grid */}
                       <div className="absolute inset-0 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none w-[500px] h-[500px] rounded-full overflow-hidden [mask-image:_radial-gradient(black,_transparent_60%)]">
                         <div className="h-[200%] animate-endless">
@@ -227,6 +271,7 @@ export default function Features() {
                         </div>
                       </div>
                       {/* Icons */}
+
                       <Transition
                         show={tab === 1}
                         className="absolute"
@@ -237,20 +282,23 @@ export default function Features() {
                         leaveFrom="opacity-100 rotate-0"
                         leaveTo="opacity-0 rotate-[60deg]"
                       >
-                        <div className="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
-                          <svg
-                            className="relative fill-slate-200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="23"
-                            height="25"
-                          >
-                            <path
-                              fillRule="nonzero"
-                              d="M10.55 15.91H.442L14.153.826 12.856 9.91h10.107L9.253 24.991l1.297-9.082Zm.702-8.919L4.963 13.91h7.893l-.703 4.918 6.289-6.918H10.55l.702-4.918Z"
-                            />
-                          </svg>
+                        <div className="relative flex items-center justify-center w-500 h-500 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            className="relative fill-slate-200 w-full object-cover  z-auto motion-safe:animate-fadeInUp"
+                            src={agilidad}
+                            alt=""
+                            width="480"
+                            height="480"
+                            style={{
+                              animationDelay: "1s",
+                              animationFillMode: "both",
+                            }}
+                          />
                         </div>
                       </Transition>
+
                       <Transition
                         show={tab === 2}
                         className="absolute"
@@ -261,15 +309,20 @@ export default function Features() {
                         leaveFrom="opacity-100 rotate-0"
                         leaveTo="opacity-0 rotate-[60deg]"
                       >
-                        <div className="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
-                          <svg
-                            className="relative fill-slate-200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="22"
-                            height="22"
-                          >
-                            <path d="M18 14h-2V8h2c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4v2H8V4c0-2.2-1.8-4-4-4S0 1.8 0 4s1.8 4 4 4h2v6H4c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4v-2h6v2c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4ZM16 4c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2h-2V4ZM2 4c0-1.1.9-2 2-2s2 .9 2 2v2H4c-1.1 0-2-.9-2-2Zm4 14c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2h2v2ZM8 8h6v6H8V8Zm10 12c-1.1 0-2-.9-2-2v-2h2c1.1 0 2 .9 2 2s-.9 2-2 2Z" />
-                          </svg>
+                        <div className="relative flex items-center justify-center w-500 h-500 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            className="relative fill-slate-200 w-full object-cover  z-auto motion-safe:animate-fadeInUp"
+                            src={agilidad}
+                            alt=""
+                            width="480"
+                            height="480"
+                            style={{
+                              animationDelay: "1s",
+                              animationFillMode: "both",
+                            }}
+                          />
                         </div>
                       </Transition>
                       <Transition
@@ -282,18 +335,46 @@ export default function Features() {
                         leaveFrom="opacity-100 rotate-0"
                         leaveTo="opacity-0 rotate-[60deg]"
                       >
-                        <div className="relative flex items-center justify-center w-16 h-16 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
-                          <svg
-                            className="relative fill-slate-200"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="26"
-                            height="14"
-                          >
-                            <path
-                              fillRule="nonzero"
-                              d="m10 5.414-8 8L.586 12 10 2.586l6 6 8-8L25.414 2 16 11.414z"
-                            />
-                          </svg>
+                        <div className="relative flex items-center justify-center w-500 h-500 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            className="relative fill-slate-200 w-full object-cover  z-auto motion-safe:animate-fadeInUp"
+                            src={agilidad}
+                            alt=""
+                            width="480"
+                            height="480"
+                            style={{
+                              animationDelay: "1s",
+                              animationFillMode: "both",
+                            }}
+                          />
+                        </div>
+                      </Transition>
+                      <Transition
+                        show={tab === 4}
+                        className="absolute"
+                        enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 order-first"
+                        enterFrom="opacity-0 -rotate-[60deg]"
+                        enterTo="opacity-100 rotate-0"
+                        leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700"
+                        leaveFrom="opacity-100 rotate-0"
+                        leaveTo="opacity-0 rotate-[60deg]"
+                      >
+                        <div className="relative flex items-center justify-center w-500 h-500 border border-transparent rounded-2xl shadow-2xl -rotate-[14deg] [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-2xl">
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            className="relative fill-slate-200 w-full object-cover  z-auto motion-safe:animate-fadeInUp"
+                            src={agilidad}
+                            alt=""
+                            width="480"
+                            height="480"
+                            style={{
+                              animationDelay: "1s",
+                              animationFillMode: "both",
+                            }}
+                          />
                         </div>
                       </Transition>
                     </div>
@@ -307,4 +388,10 @@ export default function Features() {
     </section>
   );
 }
+
+
+
+
+
+
 
