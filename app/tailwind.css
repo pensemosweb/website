@@ -52,3 +52,8 @@ label {
 .btn-sm {
   @apply px-4 py-2;
 }
+
+.btn-glow,
+.btn-glow-sm {
+  @apply text-sm font-medium inline-flex items-center justify-center border border-transparent rounded-full transition duration-150 ease-in-out;
+}

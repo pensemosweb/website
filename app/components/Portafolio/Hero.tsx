@@ -1,4 +1,4 @@
-import Particles from "~/components/Particles/Particles.tsx";
+import Particles from "~/components/Particles/Particles";
 import Illustration from "~/assets/svgs/glow-bottom.svg";
 
 export default function Hero() {
@@ -26,30 +26,21 @@ export default function Hero() {
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6" data-aos="fade-down">
-              <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-md">
-                <a
-                  className="btn-sm py-0.5 text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/50 before:rounded-full before:pointer-events-none shadow"
-                  href="#0"
-                >
-                  <span className="relative inline-flex items-center z-20">
-                    Proyectos{" "}
-                    <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-              </div>
+              <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-md"></div>
             </div>
-            <h1 className="h1 text-white pb-4" data-aos="fade-down">
+            <h1
+              className="h1 text-4xl md:text-6xl lg:text-7xl text-white pb-4"
+              data-aos="fade-down"
+            >
               Proyectos
             </h1>
             <p
-              className="text-lg text-slate-300 mb-8"
+              className="text-lg text-white mb-8"
               data-aos="fade-down"
               data-aos-delay="200"
             >
-              Our landing page template works on all devices, so you only have
-              to set it up once, and get beautiful results forever.
+              ¡Innovación con Agilidad en Cada Paso! 🚀 Nuestra agilidad no se
+              limita a palabras.💻
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -59,9 +50,9 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group"
-                  href="#0"
+                  href="#principios"
                 >
-                  Get Started{" "}
+                  Iniciar
                   <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
@@ -70,7 +61,7 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-slate-200 hover:text-white bg-slate-900 bg-opacity-25 hover:bg-opacity-30 w-full transition duration-150 ease-in-out"
-                  href="#0"
+                  href="/contacto"
                 >
                   <svg
                     className="shrink-0 fill-slate-300 mr-3"
@@ -80,7 +71,7 @@ export default function Hero() {
                   >
                     <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
                   </svg>
-                  <span>Read the docs</span>
+                  <span>Mas informacion</span>
                 </a>
               </div>
             </div>

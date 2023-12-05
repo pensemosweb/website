@@ -4,7 +4,6 @@ import Hero from "../components/Portafolio/Hero";
 import Lenguajes from "../components/Portafolio/Lenguajes";
 import Projects from "../components/Portafolio/Projects";
 import Metodos from "../components/Portafolio/Metodos";
-
 export function Links() {
   return [
     {
@@ -28,6 +27,7 @@ export default function Proyectos() {
         ></div>
 
         <Hero />
+
         <Lenguajes />
         <Principle />
 

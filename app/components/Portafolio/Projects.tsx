@@ -2,8 +2,8 @@ import Particles from "~/components/Particles/Particles";
 import Highlighter, { HighlighterItem } from "./highlighter";
 
 import FeatureImg01 from "~/assets/imgs/portafolio/afpcourst.png";
-import FeatureImg02 from "~/assets/imgs/portafolio/agilidad.png";
-import FeatureImg03 from "~/assets/imgs/portafolio/agilidad.png";
+import FeatureImg02 from "~/assets/imgs/portafolio/360.png";
+import FeatureImg03 from "~/assets/imgs/portafolio/CANCHAS.png";
 
 export default function Projects() {
   return (
@@ -17,7 +17,7 @@ export default function Projects() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 z-0">
         <div className="pt-16 md:pt-32">
           <div className="py-12 md:py-20 text-center ">
             <div className="motion-safe:animate-fadeInDown inline-flex relative before:absolute  before:inset-0 before:bg-purple-500 before:blur-md pb-8">
@@ -25,7 +25,7 @@ export default function Projects() {
                 className="btn-sm py-0.5  text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.purple.500),_theme(colors.purple.500))_padding-box,_linear-gradient(theme(colors.purple.500),_theme(colors.purple.200)_75%,_theme(colors.transparent)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/50 before:rounded-full before:pointer-events-none shadow"
                 href="#0"
               >
-                <h1 className=" h1 text-white text-center pb-4 relative inline-flex items-center z-20">
+                <h1 className=" h1 text-white text-center pb-4 relative inline-flex items-center z-0">
                   Proyectos
                   <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
@@ -40,7 +40,7 @@ export default function Projects() {
             <div className="relative pb-12 md:pb-20">
               {/* Blurred shape */}
               <div
-                className="absolute bottom-0 -mb-20 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none"
+                className="absolute bottom-0 -mb-20 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none "
                 aria-hidden="true"
               >
                 <svg
@@ -122,21 +122,18 @@ export default function Projects() {
                         <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0">
                           <div className="mb-5">
                             <div>
-                              <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
-                                Optimized for security
+                              <h3 className="inline-flex text-xl font-bold bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
+                                Afpcourts
                               </h3>
-                              <p className="text-slate-400">
-                                Optimize for user experience and privacy. Use
-                                social login integrations, lower user friction,
-                                incorporate rich user profiling, and facilitate
-                                more transactions.
-                              </p>
+                              <p className="text-slate-400">App web</p>
                             </div>
                           </div>
                           <div>
                             <a
                               className="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none"
-                              href="#0"
+                              href="https://afpcourts.mx/"
+                              target="_blank"
+                              rel="noreferrer"
                             >
                               <span className="relative inline-flex items-center">
                                 Learn more{" "}
@@ -176,12 +173,10 @@ export default function Projects() {
                         {/* Text */}
                         <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
                           <div>
-                            <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
-                              Extensibility
-                            </h3>
+                            <h3 className="inline-flex text-xl font-bold bg-clip-text  from-slate-200/60 via-slate-200 to-slate-200/60 pb-1"></h3>
                             <p className="text-slate-400">
-                              Your login box must find the right balance between
-                              user convenience, privacy and security.
+                              Perfeccionamos el arte del software para ofrecerte
+                              soluciones efectivas y modernas.
                             </p>
                           </div>
                         </div>
@@ -212,24 +207,16 @@ export default function Projects() {
                           <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]" />
                         </div>
                         {/* Text */}
-                        <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
-                          <div>
-                            <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
-                              Infinite options
-                            </h3>
-                            <p className="text-slate-400">
-                              Quickly apply filters to refine your issues lists
-                              and create custom views.
-                            </p>
-                          </div>
+                        <div className="md:max-w-[48px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                       
                         </div>
                         {/* Image */}
                         <div className="relative w-full h-64 md:h-auto overflow-hidden md:pb-8">
                           <img
                             className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0"
                             src={FeatureImg03}
-                            width={230}
-                            height={230}
+                            width={800}
+                            height={600}
                             alt="Feature 03"
                           />
                         </div>
