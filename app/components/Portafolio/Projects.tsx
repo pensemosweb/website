@@ -125,7 +125,7 @@ export default function Projects() {
                               <h3 className="inline-flex text-xl font-bold bg-clip-text text-white from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
                                 Afpcourts
                               </h3>
-                              <p className="text-slate-400">App web</p>
+                              <p className="text-slate-400">Sitio web</p>
                             </div>
                           </div>
                           <div>

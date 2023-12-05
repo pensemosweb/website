@@ -229,9 +229,9 @@ export default function Metodos() {
                         <defs>
                           <linearGradient
                             id="pulse-a"
-                            x1="50%"
-                            x2="50%"
-                            y1="100%"
+                            x1="40%"
+                            x2="30%"
+                            y1="50%"
                             y2="0%"
                           >
                             <stop offset="0%" stopColor="#A855F7" />
@@ -289,8 +289,8 @@ export default function Metodos() {
                             className="relative fill-slate-200 w-full object-cover  z-auto motion-safe:animate-fadeInUp"
                             src={agilidad}
                             alt=""
-                            width="480"
-                            height="480"
+                            width="800"
+                            height="800"
                             style={{
                               animationDelay: "1s",
                               animationFillMode: "both",

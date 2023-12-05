@@ -50,7 +50,7 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group"
-                  href="#principios"
+                  href="#lenguaje"
                 >
                   Iniciar
                   <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">

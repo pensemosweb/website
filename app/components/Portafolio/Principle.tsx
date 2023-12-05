@@ -93,8 +93,9 @@ export default function Principle() {
             </h2>
           </h1>
         </div>
-       
- <section
+
+        <section
+         
           className={`relative overflow-hidden py-8 sm:rounded-r-full sm:rounded-l-full sm:motion-safe:opacity-0 ${animations.right}`}
           style={{
             animationDelay: "0.5s",
@@ -273,10 +274,6 @@ export default function Principle() {
             </div>
           </div>
         </section>
-
-
-
-
       </div>
     </section>
   );
