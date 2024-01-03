@@ -9,8 +9,7 @@ export default function HeroEquipo() {
 
           <HeroSection
             title="  Maximo Rendimiento"
-            description="
-              Imagina un enfoque que maximice la colaboración, acelere la
+            description="Imagina un enfoque que maximice la colaboración, acelere la
                   entrega de resultados, fomente la mejora constante y se adapte
                   a los cambios en el camino."
             buttonText="Iniciar"
