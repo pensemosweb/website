@@ -5,6 +5,7 @@ import BgIllustration from "~/components/BgIlustration/BgIlustration";
 export default function MentoriasHero() {
   return (
     <section >
+         <div className="relative max-w-6xl mx-auto pb-0 px-4 sm:px-6">
       <BgIllustration />
 
       <HeroSection
@@ -13,6 +14,8 @@ export default function MentoriasHero() {
         buttonText="Regístrate"
         buttonLink="./registro"
       />
+      </div>
     </section>
+
   );
 }
