@@ -9,10 +9,13 @@ export default function ButtonWebsite({
   disabled,
   color,
   typeHover = "none",
+  isFullContent,
+  type,
   size,
 }: ButtonWebsiteProps) {
   const border = rounded ? `rounded-full` : "rounded-sm";
-  const colorButton = COLORS[color || "white"];
+  const colorButton = color ? COLORS[color || "white"] : null;
+  const fullContent = `w-full h-full`;
   const sizeButton = size ? SIZE_BUTTON[size] : null;
 
   let hoverSytles = "";
@@ -26,12 +29,12 @@ export default function ButtonWebsite({
     hoverSytles = HOVERS[typeHover];
   }
 
-  const buttonClasname = `relative group block font-semibold overflow-hidden ${border} ${colorButton} ${
-    className ? className : null
-  } ${hoverSytles} ${sizeButton ? sizeButton : "py-4 px-6"}`;
+  const buttonClasname = `relative w-full group inline-block font-semibold overflow-hidden ${border} ${
+    className ? className : sizeButton ? sizeButton : "py-4 px-6"
+  } ${isFullContent ? fullContent : null} ${hoverSytles} ${colorButton}`;
 
   return (
-    <button className={`${buttonClasname}`} disabled={disabled}>
+    <button className={`${buttonClasname}`} disabled={disabled} type={type}>
       <div className={`${hoverBar}`} />
       <div className="relative flex items-center justify-center">
         {children}
