@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 
 
-export default function HeroSection({
+export default function Hero({
   title,
   description,
   buttonText,

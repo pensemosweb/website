@@ -1,4 +1,4 @@
-import HeroSection from "~/components/Hero/hero";
+import Hero from "~/components/Hero/Hero";
 import BgIllustration from "~/routes/Equipo/BgIllustration";
 export default function HeroEquipo() {
   return (
@@ -7,7 +7,7 @@ export default function HeroEquipo() {
         <div className="max-w-6xl mx-auto px-4 relative">
           <BgIllustration />
 
-          <HeroSection
+          <Hero
             title="  Maximo Rendimiento"
             description="
               Imagina un enfoque que maximice la colaboración, acelere la
@@ -15,7 +15,6 @@ export default function HeroEquipo() {
                   a los cambios en el camino."
             buttonText="Iniciar"
             buttonLink="/contacto"
-            
           />
         </div>
       </div>
