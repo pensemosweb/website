@@ -2,10 +2,10 @@ import metodoAgile from "~/assets/imgs/feedback-loop.webp";
 import dontLoseFocus from "~/assets/svgs/dontLoseFocus.svg";
 import sectionScrum from "~/assets/imgs/clasesonetoone/section_scrum.webp";
 import { items as principles } from "./data/principles.js";
-import { Link, Outlet } from "@remix-run/react";
+import { Outlet } from "@remix-run/react";
 
 import ListaMentorias from "./ListaMentorias";
-import ButtonLink from "../../components/Button/ButtonLink";
+import ButtonLink from "../../components/Buttons/ButtonLink";
 import Arrow from "./components/Arrow";
 
 import AOS from "aos";

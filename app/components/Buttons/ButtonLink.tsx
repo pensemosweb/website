@@ -5,13 +5,14 @@ import type { ButtonLinkProps } from "./Button.d";
 export default function ButtonLink({
   href,
   children,
-  linkClassName,
+  buttonClassName,
   className,
   rounded,
   color,
   typeHover,
   icon,
   isFullContent,
+  size = "auto",
 }: ButtonLinkProps) {
   const border = rounded ? `rounded-full` : "rounded-sm";
   const finalClassName = `${border} ${className}`;
@@ -23,7 +24,8 @@ export default function ButtonLink({
         color={color}
         typeHover={typeHover}
         icon={icon}
-        className={linkClassName}
+        className={buttonClassName}
+        size={size}
         isFullContent={isFullContent}
       >
         {children}

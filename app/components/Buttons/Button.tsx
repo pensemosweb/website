@@ -16,7 +16,7 @@ export default function Button({
   const border = rounded ? `rounded-full` : "rounded-sm";
   const colorButton = color ? COLORS[color || "white"] : null;
   const fullContent = `w-full h-full`;
-  const sizeButton = size ? SIZE_BUTTON[size] : null;
+  const sizeButton = size != "auto" ? SIZE_BUTTON[size] : null;
 
   let hoverSytles = "";
   let hoverBar = "";
@@ -30,7 +30,7 @@ export default function Button({
   }
 
   const buttonClasname = `relative w-full group inline-block font-semibold overflow-hidden ${border} ${
-    className ? className : sizeButton ? sizeButton : "py-4 px-6"
+    className || sizeButton ? `${className} ${sizeButton}` : "py-4 px-6"
   } ${isFullContent ? fullContent : null} ${hoverSytles} ${colorButton}`;
 
   return (

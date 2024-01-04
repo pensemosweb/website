@@ -8,10 +8,10 @@ export interface ButtonProps {
   typeHover?: "bottomBar" | "scale" | "opacity" | "none";
   isFullContent?: boolean;
   type?: "button" | "submit" | "reset";
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "auto";
 }
 
 export interface ButtonLinkProps extends ButtonProps {
   href: string;
-  linkClassName?: string;
+  buttonClassName?: string;
 }
