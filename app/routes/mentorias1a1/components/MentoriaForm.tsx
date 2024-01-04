@@ -1,6 +1,6 @@
 import { Form } from "@remix-run/react";
 import BgIllustration from "~/components/BgIlustration/BgIlustration";
-import Button from "~/components/Button/Button";
+import Button from "~/components/Buttons/Button";
 
 export default function MentoriaForm({ actionData }) {
   return (

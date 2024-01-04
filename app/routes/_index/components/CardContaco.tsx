@@ -1,4 +1,4 @@
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 
 export interface PropsCardCotact {
   urlImg: string;

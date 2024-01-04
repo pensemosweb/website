@@ -1,4 +1,4 @@
-import type { ButtonPropsOld } from "./ButtonOld.d";
+import type { ButtonPropsOld } from "./ButtonOld";
 
 const styleBtn = {
   green: "bg-pw-primary text-white hover:bg-pw-primary/80",

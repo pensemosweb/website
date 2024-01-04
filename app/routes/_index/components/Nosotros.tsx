@@ -1,6 +1,6 @@
 import feedbackLoop from "~/assets/imgs/inicio/feedback-loop.webp";
 import WorkMetodo from "./WorkNosotros";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 import Mayorque from "~/components/Icons/MayorQue";
 
 import { useRef, useEffect, useState } from "react";
