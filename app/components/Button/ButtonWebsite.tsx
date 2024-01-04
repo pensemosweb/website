@@ -1,5 +1,5 @@
 import type { ButtonWebsiteProps } from "./ButtonWebsite.d";
-import { COLORS, HOVERS } from "./ButtonWebsite.classNames";
+import { COLORS, HOVERS, SIZE_BUTTON } from "./ButtonWebsite.classNames";
 
 export default function ButtonWebsite({
   className,
@@ -9,9 +9,11 @@ export default function ButtonWebsite({
   disabled,
   color,
   typeHover = "none",
+  size,
 }: ButtonWebsiteProps) {
   const border = rounded ? `rounded-full` : "rounded-sm";
   const colorButton = COLORS[color || "white"];
+  const sizeButton = size ? SIZE_BUTTON[size] : null;
 
   let hoverSytles = "";
   let hoverBar = "";
@@ -25,8 +27,8 @@ export default function ButtonWebsite({
   }
 
   const buttonClasname = `relative group block font-semibold overflow-hidden ${border} ${colorButton} ${
-    className ? className : "py-4 px-6"
-  } ${hoverSytles}`;
+    className ? className : null
+  } ${hoverSytles} ${sizeButton ? sizeButton : "py-4 px-6"}`;
 
   return (
     <button className={`${buttonClasname}`} disabled={disabled}>

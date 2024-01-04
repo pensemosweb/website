@@ -6,6 +6,7 @@ export interface ButtonWebsiteProps {
   disabled?: boolean;
   color?: "white" | "black" | "transparent" | "pink";
   typeHover?: "bottomBar" | "scale" | "opacity" | "none";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
 }
 
 export interface ButtonLinkProps extends ButtonWebsiteProps {
