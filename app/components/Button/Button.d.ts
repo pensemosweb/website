@@ -1,4 +1,4 @@
-export interface ButtonWebsiteProps {
+export interface ButtonProps {
   className?: string;
   children: JSX.Element | string;
   icon?: JSX.Element;
@@ -11,7 +11,7 @@ export interface ButtonWebsiteProps {
   size?: "xs" | "sm" | "md" | "lg" | "xl";
 }
 
-export interface ButtonLinkProps extends ButtonWebsiteProps {
+export interface ButtonLinkProps extends ButtonProps {
   href: string;
   linkClassName?: string;
 }

@@ -1,7 +1,7 @@
-import type { ButtonWebsiteProps } from "./ButtonWebsite.d";
-import { COLORS, HOVERS, SIZE_BUTTON } from "./ButtonWebsite.classNames";
+import type { ButtonProps } from "./Button.d";
+import { COLORS, HOVERS, SIZE_BUTTON } from "./Button.classNames";
 
-export default function ButtonWebsite({
+export default function Button({
   className,
   children,
   icon,
@@ -12,7 +12,7 @@ export default function ButtonWebsite({
   isFullContent,
   type,
   size,
-}: ButtonWebsiteProps) {
+}: ButtonProps) {
   const border = rounded ? `rounded-full` : "rounded-sm";
   const colorButton = color ? COLORS[color || "white"] : null;
   const fullContent = `w-full h-full`;

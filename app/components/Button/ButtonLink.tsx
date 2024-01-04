@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
-import ButtonWebsite from "./ButtonWebsite";
-import type { ButtonLinkProps } from "./ButtonWebsite.d";
+import Button from "./Button";
+import type { ButtonLinkProps } from "./Button.d";
 
 export default function ButtonLink({
   href,
@@ -18,7 +18,7 @@ export default function ButtonLink({
 
   return (
     <Link to={href} className={finalClassName}>
-      <ButtonWebsite
+      <Button
         rounded={rounded}
         color={color}
         typeHover={typeHover}
@@ -27,7 +27,7 @@ export default function ButtonLink({
         isFullContent={isFullContent}
       >
         {children}
-      </ButtonWebsite>
+      </Button>
     </Link>
   );
 }
