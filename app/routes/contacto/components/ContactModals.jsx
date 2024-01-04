@@ -1,11 +1,12 @@
 import { Link } from "@remix-run/react";
 import Modal from "~/components/Modal/Modal";
+import { statuses } from "../statuses"; // Adjust the path accordingly
 
 export default function ContactModals({ status }) {
   return (
     <>
       <Modal
-        isOpen={status === "success"}
+        isOpen={status === statuses.SUCCESS}
         title="Mensaje enviado"
         shortDescription="Tu mensaje fue enviado con éxito."
         actions={
@@ -22,7 +23,7 @@ export default function ContactModals({ status }) {
       </Modal>
 
       <Modal
-        isOpen={status === "error"}
+        isOpen={status === statuses.ERROR}
         title="Error"
         shortDescription="Hubó un error al enviar tu mensaje."
         icon={<ErrorIcon />}
@@ -39,7 +40,7 @@ export default function ContactModals({ status }) {
       >
         <p>Sentimos mucho los inconvenientes.</p>
         <p className="font-bold">
-          También te puedes comunicar con whatsapp, e-mail o teléfono
+          También te puedes comunicar con WhatsApp, e-mail o teléfono
         </p>
       </Modal>
     </>
