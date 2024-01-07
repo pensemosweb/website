@@ -63,37 +63,32 @@ export default function CardsEquipo() {
         <TeamMembersCards
           src1={codigoresoctavio}
           src2={octavio}
-          height={dataMembersCards[0].height}
           developerName={dataMembersCards[0].developerName}
           specialty={dataMembersCards[0].specialty}
         />
         <TeamMembersCards
           src1={codigoresnestor}
           src2={nestor}
-          height={dataMembersCards[1].height}
           developerName={dataMembersCards[1].developerName}
           specialty={dataMembersCards[1].specialty}
         />
         <TeamMembersCards
           src1={codigoresnorberto}
           src2={norberto}
-          height={dataMembersCards[2].height}
           developerName={dataMembersCards[2].developerName}
           specialty={dataMembersCards[2].specialty}
         />
         <TeamMembersCards
           src1={codigoresfatima}
           src2={fatima}
-          height={dataMembersCards[2].height}
-          developerName={dataMembersCards[2].developerName}
-          specialty={dataMembersCards[2].specialty}
+          developerName={dataMembersCards[3].developerName}
+          specialty={dataMembersCards[3].specialty}
         />
         <TeamMembersCards
           src1={codigores}
           src2={jaime}
-          height={dataMembersCards[2].height}
-          developerName={dataMembersCards[2].developerName}
-          specialty={dataMembersCards[2].specialty}
+          developerName={dataMembersCards[4].developerName}
+          specialty={dataMembersCards[4].specialty}
         />
       </div>
     </section>

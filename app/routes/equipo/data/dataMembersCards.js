@@ -1,33 +1,26 @@
 export const dataMembersCards = [
     {
-        width_background: "500",
-        height: "200",
-        width_developer: "200",
-        alt_background: "Fondo",
+        alt: "Octavio Paz",
         developerName: "Octavio Paz",
         specialty: "JS FULLSTACK DEVELOPER"
     },
     {
-        width_background: "500",
-        height: "200",
-        width_developer: "200",
-        alt_background: "Fondo",
+        alt: "Néstor",
         developerName: "Néstor",
         specialty: "FRONTEND DEVELOPER"
     },
     {
-        width_background: "500",
-        height: "200",
-        width_developer: "200",
-        alt_background: "Fondo",
+        alt: "Norberto",
         developerName: "Norberto",
         specialty: "AGILE JS DEVELOPER"
     },
     {
-        width_background: "500",
-        height: "200",
-        width_developer: "200",
-        alt_background: "Fondo",
+        alt: "Fatima",
+        developerName: "Fatima",
+        specialty: "FRONTEND DEVELOPER"
+    },
+    {
+        alt: "Jaime",
         developerName: "Jaime",
         specialty: "AGILE COACH"
     }

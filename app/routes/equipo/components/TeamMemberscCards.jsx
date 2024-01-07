@@ -18,8 +18,8 @@ export function TeamMembersCards(props){
                   className="w-full h-30 object-cover"
                   src={props.src1}
                   width="500"
-                  height={props.height}
-                  alt={props.alt}
+                  height= "200"
+                  alt= "Fondo"
                 />
                 <div className="bg-white pb-6">
                   <div className="relative inline-flex -mt-15 mb-5">
@@ -27,8 +27,8 @@ export function TeamMembersCards(props){
                       className="inline-flex rounded-full"
                       src={props.src2}
                       width="200"
-                      height={props.height}
-                      alt="Nestor"
+                      height="200"
+                      alt={props.alt}
                     />
                   </div>
                   <div className="mb-5">
