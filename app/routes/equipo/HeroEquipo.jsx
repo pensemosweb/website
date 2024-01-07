@@ -18,6 +18,6 @@ export default function HeroEquipo() {
           />
         </div>
       </div>
-    </section>
+    </section> 
   );
 }
