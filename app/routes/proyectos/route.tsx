@@ -1,7 +1,7 @@
 import AOS from "aos";
 import aosStyles from "aos/dist/aos.css";
 import { useEffect } from "react";
-import Hero from "./components/Hero";
+import Hero from "./components/HeroProyectos";
 import Lenguajes from "./components/Lenguajes";
 import MetodoAgil from "./components/MetodoAgil";
 import proyectosStyles from "./styles.css";
