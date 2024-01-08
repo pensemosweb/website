@@ -2,7 +2,7 @@ import circle from "~/assets/imgs/cta/circle-bg.svg";
 import equipo from "~/assets/imgs/equipo.webp";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@remix-run/react";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 import Mayorque from "~/components/Icons/MayorQue";
 
 export default function Equipo() {

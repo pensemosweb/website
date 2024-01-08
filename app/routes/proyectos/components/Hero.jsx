@@ -1,5 +1,5 @@
 import Illustration from "~/assets/imgs/proyectos/glow-bottom.svg";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 
 export default function Hero() {
   return (

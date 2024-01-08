@@ -1,6 +1,6 @@
 import ListServicios from "./ListServicios";
 import { useRef } from "react";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 import MayorQue from "~/components/Icons/MayorQue";
 
 export default function SectionServicios() {

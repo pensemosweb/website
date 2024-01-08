@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import userEvent from "@testing-library/user-event";
 
-import Button from "./Button";
+import Button from "./ButtonOld";
 
 describe("Button component", () => {
   it("should render component without crashing when no props are provided", () => {

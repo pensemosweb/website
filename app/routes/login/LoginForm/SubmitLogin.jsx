@@ -1,5 +1,5 @@
 import { submitLoginStyle } from "./stylesLogin";
-import Button from "~/components/Button/Button";
+import Button from "~/components/Buttons/ButtonOld";
 
 export default function SubmitLogin({ isSubmit }) {
   let buttonStyle;

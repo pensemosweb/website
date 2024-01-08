@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLink from "../../../components/Button/ButtonLink";
+import ButtonLink from "../../../components/Buttons/ButtonLink";
 
 const ContrataPaquete = () => {
   return (

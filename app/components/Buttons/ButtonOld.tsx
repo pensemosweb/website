@@ -1,4 +1,4 @@
-import type { ButtonProps } from "./Button.d";
+import type { ButtonPropsOld } from "./ButtonOld";
 
 const styleBtn = {
   green: "bg-pw-primary text-white hover:bg-pw-primary/80",
@@ -25,7 +25,7 @@ export default function Button({
   onClick,
   children,
   ...moreProps
-}: ButtonProps) {
+}: ButtonPropsOld) {
   const buttonClassName = `block border border-1 rounded-lg font-bold ${
     className ? className : ""
   } ${styleBtn[color || "default"]} ${styleSizeBtn[size]}`;

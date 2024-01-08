@@ -1,5 +1,5 @@
 import type { CardServiceProps } from "./CardService.d";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 
 export default function CardService({
   title,

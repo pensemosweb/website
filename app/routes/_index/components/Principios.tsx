@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Particles from "~/components/Particles/Particles";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 import Mayorque from "~/components/Icons/MayorQue";
 
 import principles from "~/assets/imgs/inicio/principios-1200x740.webp";

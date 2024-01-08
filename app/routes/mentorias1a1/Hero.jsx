@@ -1,5 +1,5 @@
 import BgIllustration from "~/components/BgIlustration/BgIlustration";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 
 export default function MentoriasHero() {
   return (

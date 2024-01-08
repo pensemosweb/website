@@ -1,4 +1,4 @@
-import ButtonLink from "../../components/Button/ButtonLink";
+import ButtonLink from "../../components/Buttons/ButtonLink";
 
 import AOS from "aos";
 import aosStyles from "aos/dist/aos.css";

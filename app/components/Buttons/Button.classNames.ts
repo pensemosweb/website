@@ -12,3 +12,19 @@ export const HOVERS = {
   opacity: "hover:opacity-60",
   none: "",
 };
+
+export const STYLE_BUTTON = {
+  green: "bg-pw-primary text-white hover:bg-pw-primary/80",
+  orange: "bg-pw-tertiary text-white hover:bg-pw-tertiary/80",
+  black: "bg-pw-neutral text-white hover:bg-pw-neutral/80",
+  default: "bg-white shadow-md hover:bg-blue-600 hover:text-white",
+};
+
+export const SIZE_BUTTON = {
+  xs: "px-3 py-2 text-xs",
+  sm: "px-3 py-2 text-sm",
+  md: "px-5 py-2.5 text-base",
+  lg: "px-5 py-3 text-base",
+  xl: "px-6 py-3.5 text-base",
+  xl_2: "px-6 py-4 text-lg",
+};

@@ -1,6 +1,6 @@
 import Blog from "./CardBlog";
 import { useEffect, useRef, useState } from "react";
-import ButtonLink from "~/components/Button/ButtonLink";
+import ButtonLink from "~/components/Buttons/ButtonLink";
 import Mayorque from "~/components/Icons/MayorQue";
 
 export default function Blogs({ posts }) {
