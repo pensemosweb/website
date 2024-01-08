@@ -8,7 +8,7 @@ export interface ButtonProps {
   typeHover?: "bottomBar" | "scale" | "opacity" | "none";
   isFullContent?: boolean;
   type?: "button" | "submit" | "reset";
-  size?: "xs" | "sm" | "md" | "lg" | "xl" | "auto";
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "xl_2";
 }
 
 export interface ButtonLinkProps extends ButtonProps {

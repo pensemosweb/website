@@ -26,4 +26,5 @@ export const SIZE_BUTTON = {
   md: "px-5 py-2.5 text-base",
   lg: "px-5 py-3 text-base",
   xl: "px-6 py-3.5 text-base",
+  xl_2: "px-6 py-4 text-lg",
 };

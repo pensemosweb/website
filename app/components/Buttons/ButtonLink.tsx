@@ -12,7 +12,7 @@ export default function ButtonLink({
   typeHover,
   icon,
   isFullContent,
-  size = "auto",
+  size = "xl_2",
 }: ButtonLinkProps) {
   const border = rounded ? `rounded-full` : "rounded-sm";
   const finalClassName = `${border} ${className}`;

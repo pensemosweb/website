@@ -150,7 +150,12 @@ export default function MentoriaForm({ actionData }) {
             </div>
             <div className="flex flex-wrap -mx-3 mt-6">
               <div className="w-full px-3">
-                <Button type="submit" color="pink" typeHover="opacity">
+                <Button
+                  type="submit"
+                  typeHover="opacity"
+                  color="pink"
+                  size="xl_2"
+                >
                   Enviar
                 </Button>
               </div>
