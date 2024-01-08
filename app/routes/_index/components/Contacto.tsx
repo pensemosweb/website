@@ -30,7 +30,7 @@ export default function Contacto() {
   const [animation, setAnimation] = useState("");
   const section = useRef(null);
 
-  const options = { root: null, rootMargin: "0px", threshold: 1 };
+  const options = { root: null, rootMargin: "0px", threshold: 0.1 };
 
   useEffect(() => {
     const observer = new IntersectionObserver(showContacs, options);
@@ -70,7 +70,7 @@ export default function Contacto() {
             }}
           >
             <span>¿Alguna duda o </span>
-            <span className="font-serif italic">necesitas ayuda </span>
+            <span className="font-serif italic">necesitas ayuda</span>
             <span>?</span>
           </h2>
           <p className="text-xl text-gray-600 font-semibold">
