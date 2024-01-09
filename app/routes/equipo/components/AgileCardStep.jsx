@@ -1,4 +1,4 @@
-export function AgileMethodStep(props) {
+export function AgileCardStep(props) {
     return (
       <div className="pb-4">
         <div className="relative">

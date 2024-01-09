@@ -16,7 +16,7 @@ export function TeamMembersCards(props){
               >
                 <img
                   className="w-full h-30 object-cover"
-                  src={props.src1}
+                  src={props.srcBackground}
                   width="500"
                   height= "200"
                   alt= "Fondo"
@@ -25,10 +25,10 @@ export function TeamMembersCards(props){
                   <div className="relative inline-flex -mt-15 mb-5">
                     <img
                       className="inline-flex rounded-full"
-                      src={props.src2}
+                      src={props.srcMemberImg}
                       width="200"
                       height="200"
-                      alt={props.alt}
+                      alt={props.altMemberImg}
                     />
                   </div>
                   <div className="mb-5">

@@ -1,14 +1,4 @@
-import nestor from "../../assets/imgs/equipo/nestor.webp";
-import fatima from "../../assets/imgs/equipo/fatima.webp";
-import octavio from "../../assets/imgs/equipo/octavio.webp";
-import jaime from "../../assets/imgs/equipo/jaime.webp";
-import norberto from "../../assets/imgs/equipo/norberto.webp";
-import team from "../../assets/imgs/equipo/bg-section-team.webp";
-import codigores from "../../assets/imgs/equipo/bg-codigo.webp";
-import codigoresfatima from "../../assets/imgs/equipo/bg-codigo-fatima.webp";
-import codigoresnestor from "../../assets/imgs/equipo/bg-codigo-nestor.webp";
-import codigoresoctavio from "../../assets/imgs/equipo/bg-codigo-octavio.webp";
-import codigoresnorberto from "../../assets/imgs/equipo/bg-codigo-norberto.webp";
+import team from "~/assets/imgs/equipo/bg-section-team.webp";
 import { dataMembersCards } from "./data/dataMembersCards";
 import { TeamMembersCards } from "./components/teamMemberscCards";
 export default function CardsEquipo() {
@@ -60,36 +50,18 @@ export default function CardsEquipo() {
       </div>
 
       <div className="max-w-7xl mx-auto flex flex-wrap gap-8 relative items-center pb-12">
-        <TeamMembersCards
-          src1={codigoresoctavio}
-          src2={octavio}
-          developerName={dataMembersCards[0].developerName}
-          specialty={dataMembersCards[0].specialty}
-        />
-        <TeamMembersCards
-          src1={codigoresnestor}
-          src2={nestor}
-          developerName={dataMembersCards[1].developerName}
-          specialty={dataMembersCards[1].specialty}
-        />
-        <TeamMembersCards
-          src1={codigoresnorberto}
-          src2={norberto}
-          developerName={dataMembersCards[2].developerName}
-          specialty={dataMembersCards[2].specialty}
-        />
-        <TeamMembersCards
-          src1={codigoresfatima}
-          src2={fatima}
-          developerName={dataMembersCards[3].developerName}
-          specialty={dataMembersCards[3].specialty}
-        />
-        <TeamMembersCards
-          src1={codigores}
-          src2={jaime}
-          developerName={dataMembersCards[4].developerName}
-          specialty={dataMembersCards[4].specialty}
-        />
+
+        {dataMembersCards.map((item, idx) => (
+          <TeamMembersCards
+          key = {idx}
+          srcBackground={item.srcBackground}
+          srcMemberImg={item.srcMemberImg}
+          altMemberImg = {item.altMemberImg}
+          developerName = {item.developerName}
+          specialty = {item.specialty}
+          />
+        ))}
+
       </div>
     </section>
   );
