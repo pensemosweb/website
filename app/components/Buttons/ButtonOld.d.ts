@@ -1,6 +1,6 @@
 import type { MouseEventHandler } from "react";
 
-export type ButtonProps = {
+export type ButtonPropsOld = {
   className?: string;
   text?: string;
   disabled?: boolean;

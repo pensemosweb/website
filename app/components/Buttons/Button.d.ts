@@ -1,4 +1,4 @@
-export interface ButtonWebsiteProps {
+export interface ButtonProps {
   className?: string;
   children: JSX.Element | string;
   icon?: JSX.Element;
@@ -8,9 +8,10 @@ export interface ButtonWebsiteProps {
   typeHover?: "bottomBar" | "scale" | "opacity" | "none";
   isFullContent?: boolean;
   type?: "button" | "submit" | "reset";
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "xl_2";
 }
 
-export interface ButtonLinkProps extends ButtonWebsiteProps {
+export interface ButtonLinkProps extends ButtonProps {
   href: string;
-  linkClassName?: string;
+  buttonClassName?: string;
 }
